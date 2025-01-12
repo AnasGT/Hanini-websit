@@ -14,29 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <title>Kasper | tamplte 2</title>
+    <title>HANINI</title>
 </head>
 <body>
     <!-- start header -->
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="pic/logo kasper.png" alt="">
+                <img src="images/logo.png" alt="">
             </a>
 
             <nav>
                 <i class="fas fa-bars toggle-menu"></i>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portpholio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="form">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
             </nav>
         </div>
 
@@ -44,15 +40,20 @@
     <!-- End header -->
 
     <!-- Start landing -->
-    <div class="landing">
+    <div class="landing" id="home">
         <div class="overlay">
             <div class="text">
                 <div class="content">
-                    <h2>Hello world! <br>
-                        We are Kasper We Make Art
+                    <h2>Home Service App <br>
+                        We Are Hanini
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit distinctio sed, minus eos quo commodi.
-                         Optio molestiae nihil error similique corrupti inventore, quibusdam architecto, sed, culpa assumenda quo doloribus.</p>
+                    <p>Welcome to Hanini, your trusted home service app. We connect you with reliable professionals to make your life easier. Whether it's cleaning, repairs, or installations, we've got you covered!</p>
+                    <a href="/myapp/app-release.apk" download="myapp-release.apk">
+                        <button class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Download App
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -69,180 +70,58 @@
 
     <!-- End landing -->
 
+<!-- Start Features -->
+<div class="features" id="features">
+    <div class="container">
+        <div class="main-heading">
+            <h2>Features</h2>
+            <p>Discover the exceptional features that make Hanini your ultimate home service app. Simplifying your life, one service at a time.</p>
+        </div>
 
-    <!-- Start Services  -->
-    <div class="services">
-        <div class="container">
-            <div class="main-heading">
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime iste ut nesciunt consequatur.</p>
+        <div class="features-container">
+            <div class="box">
+                <i class="fa-solid fa-mobile-screen fa-3x"></i>
+                <div class="text">
+                    <h3>Mobile App</h3>
+                    <p>Enjoy an intuitive and user-friendly mobile app that makes it easy to book services, track orders, and manage your preferences from anywhere.</p>
+                </div>
             </div>
 
-
-            <div class="services-container">
-                <div class="box">
-                    <i class="fas fa-desktop fa-3x"></i>
-                    <div class="text">
-                        <h3>desktop</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam deleniti molestias quod, exercitationem ducimus necessitatibus ut soluta cupiditate omnis corrupti voluptatum laborum </p>
-                    </div>
+            <div class="box">
+                <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>                <div class="text">
+                    <h3>Advanced Authentication</h3>
+                    <p>Experience a secure system featuring login, signup, Google authentication, password recovery, and email verification for seamless access.</p>
                 </div>
+            </div>
 
-                <div class="box">
-                    <i class="fas fa-pencil-ruler fa-3x"></i>
-                    <div class="text">
-                        <h3>desktop</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam deleniti molestias quod, exercitationem ducimus necessitatibus ut soluta cupiditate omnis corrupti voluptatum laborum </p>
-                    </div>
+            <div class="box">
+                <i class="fas fa-camera fa-3x"></i>
+                <div class="text">
+                    <h3>Enhanced Security</h3>
+                    <p>Rest assured with AI-powered ID card verification for service providers, ensuring safety and trust with every interaction.</p>
                 </div>
-        
-                <div class="box">
-                    <i class="fas fa-camera fa-3x"></i>
-                    <div class="text">
-                        <h3>desktop</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam deleniti molestias quod, exercitationem ducimus necessitatibus ut soluta cupiditate omnis corrupti voluptatum laborum </p>
-                    </div>
-                </div>
+            </div>
 
-                <div class="box">
-                    <i class="fas fa-cog fa-3x"></i>
-                    <div class="text">
-                        <h3>desktop</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam deleniti molestias quod, exercitationem ducimus necessitatibus ut soluta cupiditate omnis corrupti voluptatum laborum </p>
-                    </div>
+            <div class="box">
+                <i class="fas fa-cog fa-3x"></i>
+                <div class="text">
+                    <h3>Free to Use</h3>
+                    <p>Get started without any upfront costs. Access essential features and explore our services without worrying about fees.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- End Services  -->
-
-    <!-- Design Section -->
-    <div class="design">
-        <div class="image">
-            <img src="pic/mobile.png" alt="">
-        </div>
-        <div class="text">
-            <h2>Our Design Comes With ...</h2>
-            <ul>
-                <li>Responsive design</li>
-                <li>Modern And Clean Design</li>
-                <li>Clean Code</li>
-                <li>Browser Friendly</li>
-            </ul>
-        </div>
-    </div>
-    <!-- End Design Section -->
-
-    <!-- Start Portfolio -->
-    <div class="portfolio">
-        <div class="container">
-            <div class="main-heading">
-                <h2>portfolio</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est deserunt laboriosam praesentium reiciendis temporibus ipsam.</p>
-            </div>
-            <ul class="shuffle">
-
-                <li class="active">All</li>
-                <li>App</li>
-                <li>Photo</li>
-                <li>Web</li>
-                <li>Print</li>
-            </ul>
-        </div>
-
-        <div class="imgs-container">
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="pic/shuffle.jpg" alt="">
-                <div class="caption">
-                    <h4>Awesome Image</h4>
-                    <p>Photography</p>
-                </div>
-            </div>
-
-
-        </div>
-        <a href="#" class="more">More</a>
-    </div>
-    <!-- End Portfolio -->
-
-    <!-- Start Vidio -->
-    <div class="video" >
-        <video src="pic/Magi The Labyrinth of Magic الحلقة  1.mp4" type="video/mp4" autoplay muted loop></video>
-        <div class="text">
-            <h2>Supper Awesome Video Hero</h2>
-            <p>Its all You Need</p>
-            <button>See more</button>
-        </div>
-    </div>
-    <!-- End vidio -->
+</div>
+    <!-- End features  -->
     
     <!-- Start About -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="main-heading">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque possimus atque totam.</p>
             </div>
-            <img src="pic/mobile.png" alt="">
+            <!-- <img src="pic/mobile.png" alt=""> -->
         </div>
     </div>
     <!-- End About -->
@@ -252,53 +131,78 @@
         <div class="container">
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="num">1.236</div>
-                <p>Coffe Drinks</p>
+                <div class="num">4 +</div>
+                <p>Provider</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="num">1.236</div>
-                <p>Coffe Drinks</p>
+                <div class="num">5 +</div>
+                <p>User</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="num">1.236</div>
-                <p>Coffe Drinks</p>
+                <div class="num">50 +</div>
+                <p>Services</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="num">1.236</div>
-                <p>Coffe Drinks</p>
+                <div class="num">1 +</div>
+                <p>Admin</p>
             </div>
 
         </div>
     </div>
     <!-- End Stats -->
 
-    <!-- Start Skills -->
-    <div class="our-skills">
+    <!-- Start team -->
+    <div class="our-technologie">
         <div class="container">
 
-            <div class="testimonials">
-                <h3>testimonials</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quia vero unde explicabo inventore magni repudiandae harum!</p>
-                
+            <div class="team">
+                <h3>our team</h3>
+                <p>We are a diverse and dedicated team of professionals, working together to bring you the best home service experience. Here's the talent behind Hanini:</p>
+
+
                 <div class="content">
                     <img src="pic/persen.jpg" alt="">
                     <div class="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem officiis consectetur perferendis beatae nulla tenetur quo.
-                        <p>John Doe, CEO</p>
+                        <h2>Abdi Fares</h2>
+                        <p>dev-ops expert</p>
                     </div>
                 </div>
 
                 <div class="content">
                     <img src="pic/persen.jpg" alt="">
                     <div class="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem officiis consectetur perferendis beatae nulla tenetur quo.
-                        <p>John Doe, CEO</p>
+                        <h2>Benmati Ziad</h2>
+                        <p>AI expert</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <img src="pic/persen.jpg" alt="">
+                    <div class="text">
+                        <h2>Zobir Raouf</h2>
+                        <p>Bach-end expert</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <img src="pic/persen.jpg" alt="">
+                    <div class="text">
+                        <h2>Hechiche Noha</h2>
+                        <p>Database expert</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <img src="images/personal_img/v1.jpg" alt="">
+                    <div class="text">
+                        <h2>Alasmar Anas</h2>
+                        <p>Front-end expert</p>
                     </div>
                 </div>
 
@@ -308,130 +212,104 @@
                     <li></li>
                 </ul>
             </div>
+    <!-- End team -->
 
-            <div class="skills">
-                <h3>Skills</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quia vero unde explicabo inventore magni repudiandae harum!</p>
+    <!-- start technologie -->
+
+
+            <div class="technologie">
+                <h3>Technologies We Use</h3>
+                <p>Our application leverages cutting-edge technologies to deliver a seamless and efficient experience for our users. Here's an overview of the tools and platforms powering our app:</p>
                 
                 <div class="prog-holder">
-                    <h4>Adobe</h4>
+                    <h4>Jupyter Notebook</h4>
                     <div class="prog">
-                        <span style="width: 90%;" data-progress="90%"></span>
+                        <span style="width: 45%;" data-progress="45%"></span>
                     </div>
+                    <p>Used for data analysis and prototyping our AI models.</p>
                 </div>
-
+            
                 <div class="prog-holder">
-                    <h4>Html &amp; Css</h4>
+                    <h4>Python</h4>
                     <div class="prog">
-                        <span style="width: 70%;" data-progress="70%"></span>
+                        <span style="width: 2%;" data-progress="2%"></span>
                     </div>
+                    <p>The core language for our AI development and backend processing.</p>
                 </div>
-
+            
                 <div class="prog-holder">
-                    <h4>JS</h4>
+                    <h4>Dart</h4>
                     <div class="prog">
-                        <span style="width: 85%;" data-progress="85%"></span>
+                        <span style="width: 40%;" data-progress="40%"></span>
                     </div>
+                    <p>Powering our Flutter-based front-end for a smooth and responsive user interface.</p>
                 </div>
-
+            
                 <div class="prog-holder">
-                    <h4>Php</h4>
+                    <h4>Other</h4>
                     <div class="prog">
-                        <span style="width: 34%;" data-progress="34%"></span>
+                        <span style="width: 13%;" data-progress="13%"></span>
                     </div>
                 </div>
+                <p>Includes a variety of supporting tools like Firebase, APIs, and DevOps utilities.</p>
             </div>
+            
         </div>
     </div>
-    <!-- End Skills -->
+    <!-- End technologie -->
 
     <!-- start Quote -->
     <div class="quote">
         <div class="container">
-            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente, dolor distinctio inventore quas minima qui? Modi corporis id.</q>
-            <span>John</span>
+            <q>Hanini is a symbol of care and devotion, embodying the essence of compassion and support in every gesture.</q>
+            <span>Anas</span>
         </div>
     </div>
     <!-- End Quete -->
 
-
     <!-- Start  pricing -->
-    <div class="pricing">
+    <div class="pricing" id="pricing">
         <div class="container">
             <div class="main-heading">
                 <h2>Princing</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed suscipit iusto officia aliquam quo asperiores.</p>
             </div>
 
             <div class="plans">
                 <div class="plan">
                     <div class="head">
-                        <h3>Basic</h3>
-                        <span>19</span>
+                        <h3>Premium Plan (Monthly)</h3>
+                        <span>$19</span>
                     </div>
-
+            
                     <ul>
-                        <li>Feature No 1</li>
-                        <li>Extra Feature</li>
-                        <li>Extra Feature No 2</li>
-                        <li>Feature</li>
+                        <li>Higher visibility to customers</li>
+                        <li>Ad-free profile</li>
+                        <li>Access to advanced analytics</li>
+                        <li>Priority listing in search results</li>
                     </ul>
                     <div class="foot">
-                        <a href="#">Buy Now</a>
+                        <a href="#">Upgrade Now</a>
                     </div>
                 </div>
-
+            
                 <div class="plan">
                     <div class="head">
-                        <h3>Basic</h3>
-                        <span>19</span>
+                        <h3>Premium Plan (Yearly)</h3>
+                        <span>$199</span>
                     </div>
-
+            
                     <ul>
-                        <li>Feature No 1</li>
-                        <li>Extra Feature</li>
-                        <li>Extra Feature No 2</li>
-                        <li>Feature</li>
-                </ul>
+                        <li>All monthly premium features</li>
+                        <li>Save over 15% with yearly billing</li>
+                        <li>Exclusive offers and discounts</li>
+                        <li>Priority customer support</li>
+                    </ul>
                     <div class="foot">
-                        <a href="#">Buy Now</a>
+                        <a href="#">Upgrade Now</a>
                     </div>
                 </div>
-
-                <div class="plan">
-                    <div class="head">
-                        <h3>Basic</h3>
-                        <span>19</span>
-                    </div>
-
-                    <ul>
-                        <li>Feature No 1</li>
-                        <li>Extra Feature</li>
-                        <li>Extra Feature No 2</li>
-                        <li>Feature</li>
-                </ul>
-                    <div class="foot">
-                        <a href="#">Buy Now</a>
-                    </div>
-                </div>
-
-                <div class="plan">
-                    <div class="head">
-                        <h3>Basic</h3>
-                        <span>19</span>
-                    </div>
-
-                    <ul>
-                        <li>Feature No 1</li>
-                        <li>Extra Feature</li>
-                        <li>Extra Feature No 2</li>
-                        <li>Feature</li>
-                </ul>
-                    <div class="foot">
-                        <a href="#">Buy Now</a>
-                    </div>
-                </div>
-
+            </div>
+            
 
             </div>
 
@@ -457,7 +335,7 @@
     <!-- End  Sub -->
 
     <!-- Start Conyact -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="main-heading">
                 <h2>Contact Us</h2>
@@ -476,10 +354,6 @@
                     <h4>get in touch</h4>
                     <span class="phone">+00 123.456.789</span>
                     <span class="phone">+00 123.456.789</span>
-                    <h4>where we are</h4>
-                    <address>
-                        Awesome Address 17 <br> New York, Nyc <br> 123-4567-890 <br> USA  
-                    </address>
                 </div>
 
             </div>
@@ -491,7 +365,7 @@
     <!-- Start footer -->
     <footer>
         <div class="container">
-            <img src="pic/logo kasper.png" alt="logo">
+            <img src="images/logo.png" alt="logo">
             <p>We Are Social</p>
             <div class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -499,11 +373,11 @@
                 <i class="fab fa-youtube"></i>
                 <i class="fab fa-linkedin"></i>
             </div>
-            <p class="copyright">&copy; 2021 <span>Kasper </span>All Right Reserved</p>
+            <p class="copyright">&copy; 2025 <span>Hanini </span>All Right Reserved</p>
         </div>
     </footer>
     <!-- End footer -->
-
-
+    
+    <script src="js/js.js"></script>
 </body>
 </html>

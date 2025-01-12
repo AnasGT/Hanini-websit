@@ -6,6 +6,19 @@
 } 
 /* End variable */
 
+/* Define your main color */
+/* :root {
+    --main-color: #6A1B9A;
+    --secondary-color: #AB47BC;
+    --temp-color: rgb(241, 241, 253);
+} */
+
+/* Define a gradient */
+/* .main-gradient {
+    background: linear-gradient(to bottom, var(--main-color), var(--secondary-color));
+} */
+
+
 /* Start Glubal Rules */
 
 *{
@@ -150,7 +163,7 @@ header .container nav ul{
         display: none;
     }
 
-    header nav .toggle-menu:hover +ul {
+    header nav ul.open {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -160,13 +173,13 @@ header .container nav ul{
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    header nav .toggle-menu:hover + ul  li a{
+    header nav ul.open li a{
         padding: 15px !important;
     }
 }
 
-
 header nav .toggle-menu{
+    margin-right: 10px;
     color: white;
     font-size: 22px;
 }
@@ -224,7 +237,7 @@ header .container nav .form i{
 .landing{
     min-height: 100vh;       /* to give all the screen */
     background-color: #1f2021;
-    background-image: url(../pic/background.jpg);
+    /* background-image: url(../images/service3.jpg); */
     background-size: cover;
     position: relative;
 }
@@ -277,6 +290,43 @@ header .container nav .form i{
     line-height: 2;
 }
 
+.landing .overlay .text .content .download-btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.landing .overlay .text .content .download-btn:hover {
+    background-color: #fff;
+    color: var(--main-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.landing .overlay .text .content .download-btn i {
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .landing .overlay .text .content .download-btn {
+        margin: 20px auto;
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
 .landing .change-background{
     position: absolute;
     top: 50%;
@@ -322,57 +372,61 @@ header .container nav .form i{
 
 /* End landing */
 
-/* Start Services */
-.services{
+/* Start features */
+.features{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
 
+.features-container .box{
+    margin-bottom: 20px;
+}
+
 @media (min-width:768px) {
-    .services .services-container{
+    .features .features-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        grid-column-gap: 40px;
+        grid-column-gap: 00px;
         grid-row-gap: 60px;
     }
 }
 
-.services .container .box{
+.features .container .box{
     display: flex;
 }
 
 
-.services .container .box i{
+.features .container .box i{
     margin-right: 50px;
 }
 
 
 @media (max-width:767px) {
-    .services .container .box{
+    .features .container .box{
     display: flex;
     flex-direction: column;
     text-align: center;
     }
 
-    .services .container .box i{
+    .features .container .box i{
         margin: 0 0 30px;
     }
 
-    .services .container .box{
+    .features .container .box{
         margin-bottom: 40px;
     }
 }
 
-.services .container .box h3{
+.features .container .box h3{
     margin-bottom: 30px;
     color: var(--main-color);
 }
 
-.services .container .box p{
+.features .container .box p{
     line-height: 2;
     color: #777777;
 }
-/* End  Services */
+/* End  features */
 
 /* Start Design Section */
 .design{
@@ -381,7 +435,7 @@ header .container nav .form i{
     height: 600px;
     position: relative;
     background-color: black; 
-    background-image: url("../pic/back.png");
+    background-image: url("../pic/back3.png");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -592,12 +646,12 @@ header .container nav .form i{
     text-align: center;    
 }
 
-.about img{
+/* .about img{
     position: relative;
     bottom: -100px;
     margin-top: -100px;
     max-width: 100%;
-}
+} */
 
 @media (max-width: 767px) {
     .about img{
@@ -609,8 +663,6 @@ header .container nav .form i{
 
 /* Start Atats */
 .stats{
-    /* padding-top: var(--section-padding); */
-    /* padding-bottom: var(--section-padding); */
     text-align: center;
     background-image: url(../pic/back3.jpg);
     background-size: cover;
@@ -682,84 +734,89 @@ header .container nav .form i{
 }
 /* End Stats */
 
-/* Start Skills */
-.our-skills{
+/* Start technologie */
+.our-technologie{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
 
-.our-skills .container{
+.our-technologie .container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 @media (min-width: 992px) {
-    /* Direct Child : testimonials & Skills  */
-    .our-skills .container > div{
+    /* Direct Child : team & technologie  */
+    .our-technologie .container > div{
         flex-basis: 45%;
     }    
 }
 
-.our-skills .container > div > h3{
+.our-technologie .container > div > h3{
     margin: 0 0 30px;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
 }
 
-.our-skills .container > div > p{
+.our-technologie .container > div > p{
     color: #777;
     line-height: 2;
     text-align: center;
     margin-bottom: 60px;
 }
 
-.our-skills .container .testimonials .content{
+.our-technologie .container .team .content{
     display: flex;
     margin-bottom: 30px;
 }
 
-.our-skills .container .testimonials .content img{
+.our-technologie .container .team .content img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 50px;
 }
 
+.prog-holder .prog{
+    margin-top: 40px;
+}
+
 @media (max-width:767px) {
-    .our-skills .container .testimonials .content{
+    .our-technologie .container .team .content{
         flex-direction: column;
         text-align: center;
         align-items: center;        /* for the dimension of image */
-
     }
+
+
     
-    .our-skills .container .testimonials .content img{
+    .our-technologie .container .team .content img{
         margin: 0 auto 20px;
     }
 }
 
-.our-skills .container .testimonials .text{
+.our-technologie .container .team .text{
     line-height: 1.8;
     border-bottom: 1px solid #ccc;
 }
 
-.our-skills .container .testimonials .text p{
+.our-technologie .container .team .text p{
     color: #777;
     text-align: right;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-.our-skills .testimonials .bullets{
+.our-technologie .team .bullets{
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.our-skills .testimonials .bullets li{
+.our-technologie .team .bullets li{
     width: 14px;
     height: 14px;
     border: 1px solid #aaa;
@@ -767,34 +824,34 @@ header .container nav .form i{
     margin-left: 10px;
 }
 
-.our-skills .testimonials .bullets li.active{
+.our-technologie .team .bullets li.active{
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
 
-.our-skills .skills .prog-holder{
+.our-technologie .technologie .prog-holder{
     margin-bottom: 40px;
 }
 
-.our-skills .skills .prog-holder h4{
+.our-technologie .technologie .prog-holder h4{
     margin-bottom: 15px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-.our-skills .skills .prog-holder .prog{
+.our-technologie .technologie .prog-holder .prog{
     background-color: #dedadc;
     height: 30px;
 }
 
-.our-skills .skills .prog-holder .prog span{
+.our-technologie .technologie .prog-holder .prog span{
     display: block;
     background-color: var(--main-color);
     height: 100%;
     position: relative;
 }
 
-.our-skills .skills .prog-holder .prog span::before{
+.our-technologie .technologie .prog-holder .prog span::before{
     content: attr(data-progress);
     position: absolute;
     background-color: black;
@@ -806,7 +863,7 @@ header .container nav .form i{
     border-radius: 4px;
 }
 
-.our-skills .skills .prog-holder .prog span::after{
+.our-technologie .technologie .prog-holder .prog span::after{
     content: '';
     position: absolute;
     border-style: solid;
@@ -815,7 +872,7 @@ header .container nav .form i{
     right: -8px;
     top: -15px;
 }
-/* End Skills */
+/* End technologie */
 
 
 /* Start Quote */
@@ -860,15 +917,31 @@ header .container nav .form i{
 }
 
 .pricing .plans {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.pricing .plans .plan{
+.pricing .plans .plan {
+    flex-basis: 350px;
     background-color: #fcfcfc;
     text-align: center;
+}
 
+@media (max-width: 767px) {
+    .pricing .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing .plans .plan {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
 }
 
 .pricing .plans .plan .head{
@@ -953,12 +1026,19 @@ border-bottom: 1px solid var(--main-color);
     text-decoration: none;
 }
 
+@media (max-width: 767px) {
+    .pricing .plan{
+    margin: auto;
+
+    }
+}
+
 
 /* End princing */
 
 /* Start  Sub  */
 .sub{
-    background-image: url(../pic/background.jpg);
+    /* background-image: url(../pic/background.jpg); */
     background-size: cover;
     position: relative;
     color: white;
