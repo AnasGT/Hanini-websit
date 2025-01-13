@@ -42,3 +42,7 @@ links.forEach(link => {
 navLinks.addEventListener("click", (e) => {
     e.stopPropagation();
 });
+
+
+
+
